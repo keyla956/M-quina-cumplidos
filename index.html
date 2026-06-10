@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Máquina de Cumplidos</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Máquina de Cumplidos</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-    <div class="contenedor">
-        <h1>Máquina de Cumplidos</h1>
+<div class="app">
 
-        <p id="mensaje">
-            Presiona el botón para recibir un cumplido
-        </p>
+<h1>✨ Máquina de Cumplidos ✨</h1>
 
-        <button onclick="generarCumplido()">
-            Generar Cumplido
-        </button>
-    </div>
+<p>Escribe uno o dos nombres y gira la ruleta</p>
 
-    <script src="script.js"></script>
+
+<div class="inputs">
+
+<input id="nombre1" placeholder="👤 Persona 1">
+
+<input id="nombre2" placeholder="💕 Persona 2 (opcional)">
+
+</div>
+
+
+<div class="ruleta-container">
+
+<div id="ruleta">
+
+<div class="sector uno">⭐</div>
+<div class="sector dos">❤️</div>
+<div class="sector tres">🏆</div>
+<div class="sector cuatro">🧠</div>
+<div class="sector cinco">🚀</div>
+<div class="sector seis">🔥</div>
+<div class="sector siete">🎨</div>
+<div class="sector ocho">😊</div>
+
+<div class="centro">
+GIRAR ⭐
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="resultado">
+
+<h3>✨ Tu cumplido es ✨</h3>
+
+<p id="texto">
+Presiona el botón
+</p>
+
+<span id="emoji">
+😊
+</span>
+
+</div>
+
+
+<button onclick="generar()">
+🎁 Generar cumplido
+</button>
+
+
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

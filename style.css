@@ -1,24 +1,269 @@
 body{
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+
+margin:0;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-family:Arial;
+
+background:linear-gradient(
+135deg,
+#f8d7ff,
+#c8f7ff
+);
+
 }
 
-.contenedor{
-    margin-top: 100px;
+
+
+.app{
+
+background:white;
+
+width:450px;
+
+padding:30px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 30px #999;
+
 }
+
+
 
 h1{
-    color: #333;
+
+color:#245b75;
+
 }
 
-#mensaje{
-    font-size: 22px;
-    margin: 20px;
+
+
+.inputs{
+
+display:flex;
+
+gap:15px;
+
 }
+
+
+
+input{
+
+width:50%;
+
+padding:12px;
+
+border-radius:20px;
+
+border:2px solid #bde0fe;
+
+}
+
+
+
+#ruleta{
+
+width:230px;
+
+height:230px;
+
+border-radius:50%;
+
+margin:30px auto;
+
+position:relative;
+
+overflow:hidden;
+
+border:8px solid #243b55;
+
+transition:2s;
+
+background:conic-gradient(
+
+#ffd166 0deg 45deg,
+
+#ff7eb3 45deg 90deg,
+
+#90be6d 90deg 135deg,
+
+#f94144 135deg 180deg,
+
+#43aa8b 180deg 225deg,
+
+#577590 225deg 270deg,
+
+#f9844a 270deg 315deg,
+
+#9b5de5 315deg 360deg
+
+);
+
+}
+
+
+
+.girar{
+
+transform:rotate(720deg);
+
+}
+
+
+
+.sector{
+
+position:absolute;
+
+font-size:35px;
+
+}
+
+
+
+.uno{
+
+top:20px;
+
+left:100px;
+
+}
+
+.dos{
+
+top:40px;
+
+right:30px;
+
+}
+
+.tres{
+
+right:20px;
+
+top:100px;
+
+}
+
+.cuatro{
+
+right:40px;
+
+bottom:40px;
+
+}
+
+.cinco{
+
+bottom:20px;
+
+left:100px;
+
+}
+
+.seis{
+
+bottom:40px;
+
+left:40px;
+
+}
+
+.siete{
+
+left:20px;
+
+top:100px;
+
+}
+
+.ocho{
+
+left:40px;
+
+top:40px;
+
+}
+
+
+
+.centro{
+
+position:absolute;
+
+background:#243b55;
+
+color:white;
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+top:80px;
+
+left:80px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:12px;
+
+}
+
+
+
+.resultado{
+
+border:2px solid #b7e4c7;
+
+border-radius:20px;
+
+padding:10px;
+
+}
+
+
+
+#emoji{
+
+font-size:50px;
+
+}
+
+
 
 button{
-    padding: 12px 20px;
-    font-size: 18px;
-    cursor: pointer;
+
+margin-top:20px;
+
+background:#8a2be2;
+
+color:white;
+
+border:none;
+
+padding:15px 35px;
+
+border-radius:25px;
+
+font-size:17px;
+
+cursor:pointer;
+
 }
